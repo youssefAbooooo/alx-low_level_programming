@@ -2,8 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 
-/*main-entry point Descreption:positive or negative*/
-/*return:0(sucess)*/
+/**
+ * main - Determines if a number is positive, negative or zero.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
