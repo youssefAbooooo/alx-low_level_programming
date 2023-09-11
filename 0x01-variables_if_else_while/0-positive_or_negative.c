@@ -3,7 +3,11 @@
 #include <stdio.h>
 
 /**
-*positive or negative number program
+* main - entry point 
+* 
+* Descreption : positive or negative 
+*
+* return : 0 (sucess)
 */
 int main(void)
 {
