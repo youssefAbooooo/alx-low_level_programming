@@ -8,20 +8,35 @@
  */
 void print_to_98(int n)
 {
-	for (; n < 99; n++)
+	if (n >= 98)
 	{
-		if (n < 10 && n > -10)
-			_putchar(n % 10 + '0');
-		else
+		for (; n < 99; n++)
+		{
+			if (n < 10 && n > -10)
+				_putchar(n % 10 + '0');
+			else
+			{
+				_putchar(n / 10 + '0');
+				_putchar(n % 10 + '0');
+			}
+			if (n != 98)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+		}
+	}
+	else 
+	{
+		for (; n > 97; n--)
 		{
 			_putchar(n / 10 + '0');
 			_putchar(n % 10 + '0');
+			if (n != 98)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
-		if (n != 98)
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-		n++;
-	}
+	_putchar('\n');
 }
