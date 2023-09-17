@@ -4,7 +4,6 @@
  * more_numbers - Entry point
  *
  * Description: _ilower  want to check if it is lowercase or not
- * @c: this a number
  *
  * Return: Always 0 (Success)
  */
