@@ -14,6 +14,7 @@ void print_rev(char *s)
 	int len;
 	int o;
 
+	len = 0;
 	while (*s != '\0')
 	{
 		len++;
