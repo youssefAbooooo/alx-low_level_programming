@@ -1,34 +1,29 @@
 #include "main.h"
 
 /**
- * print_diagonal - Entry point
- *
- * Description: _ilower  want to check if it is lowercase or not
- * @n: this a number
- *
- * Return: Always 0 (Success)
+ * print_diagonal - draws a diagonal line on the terminal
+ * @n: number of times the character \ should be printed
  */
 
 void print_diagonal(int n)
 {
-	if (n > 0)
+	if (n <= 0)
 	{
-		int i, count;
-
-		count = 0;
+		_putchar('\n');
+	} else
+	{
+		int i, j;
 
 		for (i = 0; i < n; i++)
 		{
-			for (int j = 0; j < count; j++)
+			for (j = 0; j < n; j++)
 			{
-				putchar(' ');
+				if (j == i)
+					_putchar('\\');
+				else if (j < i)
+					_putchar(' ');
 			}
-			count++;
-			putchar('\\');
-			if (i < n - 1)
-				putchar('\n');
+			_putchar('\n');
 		}
 	}
-	else
-		putchar('\n');
 }
